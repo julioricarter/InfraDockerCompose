@@ -7,8 +7,8 @@ API
   - Minimal API
     - Debe retornar un mensaje incluyendo mi nombre
   - Docker
-- docker run -d --rm -p 3000:3000 nmatsui/hello-world-api.  compassionate_franklin
-docker run -d --rm -p 3001:3000 nmatsui/hello-world-api  
+- docker run -d --rm -p 3000:3000 nmatsui/hello-world-api.  e721dfb68a22 elegant_boyd
+docker run -d --rm -p 3001:3000 nmatsui/hello-world-api.  b9ed8e16dfea optimistic_tu
 
 BD
   - PostgreSQL
@@ -33,4 +33,11 @@ MESSAGE=<Hola, mi nombre es Julio Vasquez>
 # Creditos
 - Julio Ricarter Vasquez Aliaga
 
-# ETC
+# NOTAS
+- Lo mas recomendable para cambiar el texto en 
+
+```bash
+return process.env.MESSAGE || this.DEFAULT_MESSAGE;
+```
+
+es con el uso de variables

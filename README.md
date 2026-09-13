@@ -13,7 +13,13 @@ docker run -d --rm -p 3001:3000 nmatsui/hello-world-api.  b9ed8e16dfea optimisti
 BD
   - PostgreSQL
 - $ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
-- 
+- revisar postgresql docker exec -it db psql -U postgres -d postgres
+
+VOLUMENES
+
+- En mi caso aplique volumenes en la base de datos
+    ¿Por qué? se preguntaran 
+    La base de datos guarda información que debe persistir como ejemplo se guardan tablas, registros. Sin un volumen, si el contenedor se borra o se recrea, se pierden todos los datos. Las APIs, en cambio, no guardan nada propio: solo ejecutan código y responden, así que no necesitan volumen.
 
 
 # Indicaciones

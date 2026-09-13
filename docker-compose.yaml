@@ -8,7 +8,7 @@ services:
     ports:
       - "3000:3000" 
     environment:
-      - MESSAGE=Julio Vasquez
+      - MESSAGE=${MESSAGE}
 
   app2:
     container_name: app2
@@ -16,4 +16,12 @@ services:
     ports:
       - "3001:3000" 
     environment:
-      - MESSAGE=Julio Vasquez Aliaga
+      - MESSAGE=${MESSAGE}
+
+  app3:
+    container_name: app3
+    build: ./hello-world-api
+    ports:
+      - "3002:3000" 
+    environment:
+      - MESSAGE=${MESSAGE}

@@ -46,3 +46,4 @@ Si sale al error al momento de ejecutar
 docker compose up --build
 ```
 es debido a que el puerto asignado ya este en uso, en esa caso lo recomendables es buscar quien lo esta ocupando y desactivarlo
+

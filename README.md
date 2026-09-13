@@ -76,7 +76,11 @@ Los volumenes aportan una forma de persistir archivos mas alla de lo que es el c
 
 - **Volumen:** El mas recomendable, los volumenes son independientes del host y se gestiona a travez del directorio donde trabaja Docker
 
-- **Bind Mouth:** Se encarga de montar un directorio del sistema de archivos del host 
+- **Bind Mouth:** Se encarga de montar un directorio del sistema de archivos del host
+
+- **TMPFS Mouth:** Sirve para gestionar archivos en memoria
+ 
+![image alt]( [Aquí escriben el permalink de la imagen](https://github.com/julioricarter/InfraDockerCompose/blob/f76ce565fdf86f35b9216609f249ae59efeba2bf/Repo_desplegado.jpeg) )  
 
 - **TMPFS Mouth:** Sirve para gestionar archivos en memoria 
 

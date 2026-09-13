@@ -2,7 +2,18 @@ version: '0'
 
 services:
 
-  app:
+  app1:
+    container_name: app1
     build: ./hello-world-api
     ports:
       - "3000:3000" 
+    environment:
+      - MESSAGE=Julio Vasquez
+
+  app2:
+    container_name: app2
+    build: ./hello-world-api
+    ports:
+      - "3001:3000" 
+    environment:
+      - MESSAGE=Julio Vasquez Aliaga

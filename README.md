@@ -39,5 +39,10 @@ MESSAGE=<Hola, mi nombre es Julio Vasquez>
 ```bash
 return process.env.MESSAGE || this.DEFAULT_MESSAGE;
 ```
-
 es con el uso de variables
+
+Si sale al error al momento de ejecutar 
+```bash
+docker compose up --build
+```
+es debido a que el puerto asignado ya este en uso, en esa caso lo recomendables es buscar quien lo esta ocupando y desactivarlo

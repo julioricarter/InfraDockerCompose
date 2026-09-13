@@ -22,6 +22,7 @@ VOLUMENES
     La base de datos guarda información que debe persistir como ejemplo se guardan tablas, registros. Sin un volumen, si el contenedor se borra o se recrea, se pierden todos los datos. Las APIs, en cambio, no guardan nada propio: solo ejecutan código y responden, así que no necesitan volumen.
 
 
+
 # Indicaciones
 
 ## Comandos
@@ -54,3 +55,14 @@ docker compose up --build
 ```
 es debido a que el puerto asignado ya este en uso, en esa caso lo recomendables es buscar quien lo esta ocupando y desactivarlo
 
+ - No es recomendable poner el noombre de la variable de entorno del .env en este README, pero como por ahora no es ningun dato sensible que se pueda usar de manera mal intencionada ira aqui, aunque en el example haya una parte
+  MESSAGE = Hola, mi nombre es Julio Vasquez
+
+- .env puesto en el .gitignore
+
+
+### Tipos de Redes
+
+Los tipos de redes mas comunes son las siguiente
+- bridge: La red por defecto que permite la comunicación entre contenedores del mismo host
+- host: Permite que los contenedores compartan la red del host, hay que tener cuidado con la seguridad porque los contenedores pueden ver la red del host anfitrión

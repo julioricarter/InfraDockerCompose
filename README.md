@@ -69,3 +69,14 @@ Los tipos de redes mas comunes son las siguiente
 - **overlay:** Red que permite la comunicación entre contenedores en diferentes hosts
 - **macvlan:** Red que permite asignar una dirección MAC a un contenedor y que se comporte como un dispositivo físico en la red
 - **none:** Sin red, el contenedor no tendrá acceso a la red
+
+## Tipos de Volumen
+
+Los volumenes aportan una forma de persistir archivos mas alla de lo que es el ciclo de vida de un contenedor Docker
+
+- **Volumen:** El mas recomendable, los volumenes son independientes del host y se gestiona a travez del directorio donde trabaja Docker
+
+- **Bind Mouth:** Se encarga de montar un directorio del sistema de archivos del host 
+
+- **TMPFS Mouth:** Sirve para gestionar archivos en memoria 
+

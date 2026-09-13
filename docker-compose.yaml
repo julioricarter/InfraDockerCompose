@@ -25,3 +25,11 @@ services:
       - "3002:3000" 
     environment:
       - MESSAGE=${MESSAGE}
+
+  db:
+    container_name: db
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5432:5432"

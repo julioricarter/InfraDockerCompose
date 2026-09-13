@@ -64,5 +64,8 @@ es debido a que el puerto asignado ya este en uso, en esa caso lo recomendables 
 ### Tipos de Redes
 
 Los tipos de redes mas comunes son las siguiente
-- bridge: La red por defecto que permite la comunicación entre contenedores del mismo host
-- host: Permite que los contenedores compartan la red del host, hay que tener cuidado con la seguridad porque los contenedores pueden ver la red del host anfitrión
+- **bridge:** La red por defecto que permite la comunicación entre contenedores del mismo host
+- **host:** Permite que los contenedores compartan la red del host, hay que tener cuidado con la seguridad porque los contenedores pueden ver la red del host anfitrión
+- **overlay:** Red que permite la comunicación entre contenedores en diferentes hosts
+- **macvlan:** Red que permite asignar una dirección MAC a un contenedor y que se comporte como un dispositivo físico en la red
+- **none:** Sin red, el contenedor no tendrá acceso a la red
